@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    min-height: 100vh;
+  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  
+}
+
+section {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 450px;
+    overflow: hidden;
+    
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.full_input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+input{
+    width: 90%;
+    padding: 10px 5px;
+    height: 39px;
+    border: 1px solid gray;
+    border-radius: 5px 0 0 5px;
+    outline: 0;
+}
+
+button{
+    width: 10%;
+    height: 39px;
+    border: 0;
+    background-color: green;
+    color: white;
+}
+
+.paragraphe_style{
+    margin: 10px 0;
+    padding: 10px 0;
+    padding-left: 5px;
+    border-radius: 6px;
+    color: white;
+    background-color: green;
+    word-break: break-all;
+    cursor: pointer;
+    animation: anime 0.5s linear;
+    transition: 0.5s ease;
+}
+
+.paragraphe_style:last-child{
+    margin-bottom: 0;
+}
+
+@keyframes anime{
+    from{
+        transform: translateY(50px);
+    }
+}
+
+.paragraph-click{
+    background-color: red;
+    font-weight: 400;
+    text-decoration: line-through;
+    transform: translateX(-5px);
+    
+}
